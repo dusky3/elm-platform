@@ -23,6 +23,8 @@ Okay, if you have made it here, you are in a unique position. We are currently w
 
 You will need Haskell to build this stuff. On some platforms the [Haskell Platform][hp] will work for you, but read the rest of this paragraph before making any moves. You need GHC to compile the code. Developers typically build with GHC 7.8 but as of 0.15.1 things should build with GHC 7.10 as well. You also need cabal 1.18 or higher. This will let you create a cabal sandbox which should make the build process much easier. Before getting Haskell Platform, make sure it is going to give you these things.
 
+> **Note for Linux users:** Make sure that your libc6 library is version 2.15 or higher and that you have libtinfo-dev installed on your machine *prior to installing GHC and cabal*.
+
 [hp]: http://hackage.haskell.org/platform/
 
 > **Note:** Sometimes things go bad with cabal, so know that [you can always blow it all up](https://www.reddit.com/r/elm/comments/34np4m/how_to_uninstall_elm/). I sometimes do this after a fresh install of GHC and cabal to make sure there are no globaly installed packages that are going to make things suck for me later.
